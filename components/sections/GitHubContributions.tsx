@@ -108,8 +108,6 @@ export default function GitHubContributions({ username, onTotalChange }: { usern
     }
   }, [username]);
 
-  console.log('🎨 [GitHubContributions] Render state:', { loading, error, contributionsCount: contributions.length });
-
   if (loading) {
     return (
       <div className="w-full h-32 flex items-center justify-center">
