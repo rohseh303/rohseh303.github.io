@@ -4,6 +4,13 @@ import Container from '@/components/ui/Container';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
+// Generate static params for all blog posts
+export function generateStaticParams() {
+  return (posts as any[]).map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = (posts as any[]).find(p => p.slug === params.slug);
   
