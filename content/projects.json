@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": "campus-cuisine",
+      "title": "Campus Cuisine",
+      "description": "iOS app displaying dining hall menus across university campuses. Created with Swift/SwiftUI and AWS infrastructure for automatic menu updates.",
+      "technologies": ["SwiftUI", "Swift", "AWS API Gateway", "AWS Lambda", "S3", "IAM", "EventBridge"],
+      "links": {
+        "appStore": "https://apps.apple.com/ca/app/campus-cuisine/id6445905781",
+        "github": "https://github.com/rohseh303"
+      },
+      "metrics": [
+        { "label": "Users", "value": "380+" }
+      ],
+      "status": "completed",
+      "type": "ios",
+      "image": "/images/projects/CampusCuisine.jpg"
+    },
+    {
+      "id": "paytote",
+      "title": "Paytote",
+      "description": "Swift-based iOS app for automated receipt tracking, using Square Payment API and AWS. Built website for stores to download extension with NextJS and Tailwind.",
+      "technologies": ["Swift", "SwiftUI", "Next.js", "Tailwind", "AWS Amplify", "DynamoDB", "API Gateway", "Lambda", "Square API"],
+      "links": {
+        "github": "https://github.com/rohseh303/PayTote-2"
+      },
+      "status": "completed",
+      "type": "full-stack",
+      "image": "/images/projects/Paytote.jpg"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-mono: 'JetBrains Mono', monospace;
+  --bg-primary: #0a0a0a;
+  --bg-surface: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Force cursor: none on all elements, including pseudo-elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none !important; /* Hide default cursor everywhere */
+}
+
+html,
+body {
+  cursor: none !important;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none !important;
+}
+
+/* Re-apply on focus/blur to catch browser UI interactions */
+html:focus,
+body:focus,
+html:focus-within,
+body:focus-within {
+  cursor: none !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  cursor: none !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  cursor: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+  cursor: none !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: none !important;
+}
+
+/* Ensure all interactive elements also hide cursor */
+a, button, input, textarea, select, 
+[role="button"], [onclick], [tabindex],
+label, svg, img {
+  cursor: none !important;
+}
+
+/* Hover states also hide cursor */
+a:hover, button:hover, input:hover, 
+textarea:hover, select:hover {
+  cursor: none !important;
+}
+
+/* Utility classes */
+@layer utilities {
+  .border-terminal {
+    border: 1px solid var(--border-color);
+  }
+  
+  .hover-border-terminal:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
