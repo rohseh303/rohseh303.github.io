@@ -1,6 +1,22 @@
 {
   "posts": [
     {
+      "slug": "play-long-term-games-with-long-term-people",
+      "title": "Play Long-term Games With Long-term People",
+      "date": "2019-03-19",
+      "excerpt": "Naval Ravikant on choosing enduring industries and people you can build with repeatedly, where trust and compound interest have time to do their work.",
+      "tags": ["naval", "career", "compound-interest", "relationships"],
+      "url": "https://nav.al/long-term"
+    },
+    {
+      "slug": "fault-tolerant-quantum-computing-is-within-reach",
+      "title": "Fault-tolerant quantum computing is within reach",
+      "date": "2026-03-30",
+      "excerpt": "Oratomic's case for utility-scale neutral atom quantum computers, high-rate error correction, and the cryptographic implications of practical fault tolerance.",
+      "tags": ["quantum-computing", "fault-tolerance", "cryptography", "neutral-atoms"],
+      "url": "https://www.oratomic.com/news/fault-tolerant-within-reach"
+    },
+    {
       "slug": "the-precipice",
       "title": "The Precipice",
       "date": "2020-03-10",
