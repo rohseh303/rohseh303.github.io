@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Rohan Sehgal | Software Engineer',
-  description: 'Founding Engineer at Broccoli.com. Building AI voice agents and full-stack systems.',
+  description: 'Engineer at Tools for Humanity. Previously founding engineer at Broccoli (YC W22).',
 };
 
 export default function RootLayout({

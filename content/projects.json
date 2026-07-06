@@ -1,6 +1,25 @@
 {
   "projects": [
     {
+      "id": "reverse-llm",
+      "title": "Reverse-LLM",
+      "description": "A language model that reads forward-English questions and answers in character-reversed English, generated tail-first. Custom BPE trained on a mixed forward + reversed corpus, direction tokens for mode control; standard decoder-only transformer, forked from nanochat.",
+      "technologies": ["PyTorch", "nanochat", "Custom BPE"],
+      "links": {
+        "github": "https://github.com/rohseh303/reverse-llm"
+      },
+      "status": "active",
+      "type": "ml"
+    },
+    {
+      "id": "luma-website-clone-agent",
+      "title": "Luma Website Cloning Agent",
+      "description": "Agentic system that turns any URL into a dev-ready multi-page Next.js clone. Playwright crawls and inspects the source site at desktop + mobile breakpoints; page-worker agents produce a structured Section IR; deterministic codegen writes a real Next.js App Router project. Follow-up chat edits target a single page/section and regenerate only that slice.",
+      "technologies": ["Next.js", "TypeScript", "Python", "FastAPI", "Playwright", "Claude Agent SDK"],
+      "status": "completed",
+      "type": "full-stack"
+    },
+    {
       "id": "campus-cuisine",
       "title": "Campus Cuisine",
       "description": "iOS app displaying dining hall menus across university campuses. Created with Swift/SwiftUI and AWS infrastructure for automatic menu updates.",

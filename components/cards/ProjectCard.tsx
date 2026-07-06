@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <div>
           <h3 className="text-lg font-medium mb-1">{project.title}</h3>
           <p className="text-xs text-[#a0a0a0] uppercase tracking-wider mb-2">
-            {project.type} • {project.status}
+            {project.type}
           </p>
         </div>
       </div>
