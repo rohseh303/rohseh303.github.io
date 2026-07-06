@@ -12,10 +12,13 @@
       "type": "ml"
     },
     {
-      "id": "luma-website-clone-agent",
-      "title": "Luma Website Cloning Agent",
+      "id": "website-cloning-agent",
+      "title": "Website Cloning Agent",
       "description": "Agentic system that turns any URL into a dev-ready multi-page Next.js clone. Playwright crawls and inspects the source site at desktop + mobile breakpoints; page-worker agents produce a structured Section IR; deterministic codegen writes a real Next.js App Router project. Follow-up chat edits target a single page/section and regenerate only that slice.",
       "technologies": ["Next.js", "TypeScript", "Python", "FastAPI", "Playwright", "Claude Agent SDK"],
+      "links": {
+        "github": "https://github.com/rohseh303/website-cloning-agent"
+      },
       "status": "completed",
       "type": "full-stack"
     },
