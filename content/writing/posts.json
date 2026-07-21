@@ -1,6 +1,13 @@
 {
   "posts": [
     {
+      "slug": "ctf-lite-training-environment",
+      "title": "Making ctf-lite a real training environment",
+      "date": "2026-07-20",
+      "excerpt": "Turning a capture-the-flag eval into an RL training environment — the null result I kept, the diagnosis, and the difficulty-generator fix I built and measured.",
+      "tags": ["rl", "grpo", "prime-rl", "ctf", "build-log"]
+    },
+    {
       "slug": "play-long-term-games-with-long-term-people",
       "title": "Play Long-term Games With Long-term People",
       "date": "2019-03-19",

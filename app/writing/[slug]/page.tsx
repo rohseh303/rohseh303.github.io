@@ -3,6 +3,7 @@ import Navigation from '@/components/layout/Navigation';
 import Container from '@/components/ui/Container';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import CtfLiteWriteup from '@/components/writing/CtfLiteWriteup';
 
 // Generate static params for all blog posts
 export function generateStaticParams() {
@@ -11,9 +12,10 @@ export function generateStaticParams() {
   }));
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = (posts as any[]).find(p => p.slug === params.slug);
-  
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = (posts as any[]).find(p => p.slug === slug);
+
   if (!post) {
     notFound();
   }
@@ -39,11 +41,12 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   year: 'numeric',
                 })}
               </p>
-              <div className="prose prose-invert max-w-none">
-                <p className="text-[#a0a0a0] leading-relaxed">
-                  {post.excerpt}
-                </p>
-                {/* In the future, you can add MDX content here */}
+              <div className="max-w-none">
+                {post.slug === 'ctf-lite-training-environment' ? (
+                  <CtfLiteWriteup />
+                ) : (
+                  <p className="text-[#a0a0a0] leading-relaxed">{post.excerpt}</p>
+                )}
               </div>
             </article>
           </div>
