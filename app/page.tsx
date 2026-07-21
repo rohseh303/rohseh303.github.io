@@ -3,6 +3,7 @@ import ProfileSection from '@/components/sections/ProfileSection';
 import ValuesSection from '@/components/sections/ValuesSection';
 import AboutMeSection from '@/components/sections/AboutMeSection';
 import GitHubEmbed from '@/components/sections/GitHubEmbed';
+import WritingPreview from '@/components/sections/WritingPreview';
 import aboutData from '@/content/about.json';
 import Container from '@/components/ui/Container';
 import SectionHeader from '@/components/sections/SectionHeader';
@@ -26,7 +27,12 @@ export default function Home() {
           <div className="mb-8">
             <AboutMeSection />
           </div>
-          
+
+          {/* Writing */}
+          <div className="mb-8">
+            <WritingPreview />
+          </div>
+
           {/* GitHub Profile Embed */}
           <div className="mb-16">
             <GitHubEmbed />
