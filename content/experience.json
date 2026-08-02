@@ -1,0 +1,77 @@
+{
+  "experience": [
+    {
+      "id": "broccoli",
+      "company": "Broccoli.com (YC W22)",
+      "role": "Founding Engineer",
+      "location": "San Francisco, CA",
+      "startDate": "January 2025",
+      "endDate": "Present",
+      "type": "full-time",
+      "description": [
+        "America runs on the trades. Come join us to find out what we've been working on!"
+      ],
+      "technologies": ["TypeScript", "Supabase", "Next.js", "Temporal", "LangChain", "Nest.js"]
+    },
+    {
+      "id": "amazon-robotics",
+      "company": "Amazon Robotics",
+      "role": "Software Development Co-op",
+      "location": "Boston, MA",
+      "startDate": "September 2024",
+      "endDate": "December 2024",
+      "type": "co-op",
+      "description": [
+        "Building automated AMI creation workflow to standardize EC2 config, installing Docker, NVIDIA drivers, and ECS agent config, cutting setup time and ensuring consistent, high-performance execution for GPU-accelerated tasks.",
+        "Reduced total runtime from 45+ to 10 minutes, while improving stability and preservation of artifacts.",
+        "Developed Hydra CLI automated integration tests to ensure stability for large-scale synthetic data generation."
+      ],
+      "technologies": ["TypeScript", "AWS CDK", "EC2", "SSM", "S3"]
+    },
+    {
+      "id": "salesforce",
+      "company": "Salesforce",
+      "role": "Software Engineering Intern",
+      "location": "Bellevue, WA",
+      "startDate": "June 2024",
+      "endDate": "September 2024",
+      "type": "intern",
+      "description": [
+        "Worked on IAM Copilot to automate and optimize internal IAM support using a GenAI-driven backend system",
+        "Utilized Python and XSOAR to support additional features through agents",
+        "Cross team collaboration effort with IAM team, boosting real-time user engagement and speeding access to support"
+      ],
+      "technologies": ["Python", "XSOAR"]
+    },
+    {
+      "id": "capital-one",
+      "company": "Capital One",
+      "role": "Machine Learning Intern",
+      "location": "Philadelphia, PA",
+      "startDate": "June 2023",
+      "endDate": "August 2023",
+      "type": "intern",
+      "description": [
+        "Set up a multi-node GPU distributed training system using DASK to reduce XGBoost model training time",
+        "Integrated the training system with a ChromaDB vector database and tuning model accuracy with Optuna",
+        "Sped up data loading time by 10x with data iterator and migrated existing work to Kubeflow Pipelines"
+      ],
+      "technologies": ["Python", "XGBoost", "Dask", "Optuna", "Pandas", "ChromaDB", "Kubeflow"]
+    },
+    {
+      "id": "sap-ns2",
+      "company": "SAP National Security Services",
+      "role": "Software Engineering Intern",
+      "location": "Remote",
+      "startDate": "June 2022",
+      "endDate": "December 2022",
+      "type": "intern",
+      "description": [
+        "Developed 5+ advanced analytics dashboards using SAP front-end frameworks, JavaScript, and SQL for causes such as NOLB, a veteran-run charity focusing on evacuating Afghanistan interpreters and family",
+        "Created incident reporting software service using SAC, allowing NS2 to view 130+ companies' customer data",
+        "Revamped internal team's SAP Solution Manager to perform highly efficient SAP HANA TPOs"
+      ],
+      "technologies": ["JavaScript", "SQL", "SAP Frameworks"]
+    }
+  ]
+}

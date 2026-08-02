@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "id": "ctf-lite",
+      "title": "ctf-lite — RL training environment",
+      "description": "Turned a capture-the-flag crypto eval into a GRPO training environment for Qwen3-4B on prime-rl. Kept an honest null result (no significant lift at n=16 rollouts), diagnosed it to a difficulty cliff that starved GRPO of gradient, then built a procedural difficulty generator that splits each task across decoupled sub-knobs to turn a cliff into a climbable curriculum. Published as a repo, a wandb report, HF weights, and a Prime Hub environment.",
+      "technologies": ["prime-rl", "verifiers", "GRPO", "LoRA", "PyTorch", "Qwen3-4B"],
+      "links": {
+        "github": "https://github.com/rohseh303/prime-rl-environments",
+        "writeup": "/writing/ctf-lite-training-environment"
+      },
+      "status": "active",
+      "type": "ml"
+    },
+    {
+      "id": "reverse-llm",
+      "title": "Reverse-LLM",
+      "description": "A language model that reads forward-English questions and answers in character-reversed English, generated tail-first. Custom BPE trained on a mixed forward + reversed corpus, direction tokens for mode control; standard decoder-only transformer, forked from nanochat.",
+      "technologies": ["PyTorch", "nanochat", "Custom BPE"],
+      "links": {
+        "github": "https://github.com/rohseh303/reverse-llm",
+        "writeup": "/writing/reverse-llm"
+      },
+      "status": "active",
+      "type": "ml"
+    },
+    {
+      "id": "website-cloning-agent",
+      "title": "Website Cloning Agent",
+      "description": "Agentic system that turns any URL into a dev-ready multi-page Next.js clone. Playwright crawls and inspects the source site at desktop + mobile breakpoints; page-worker agents produce a structured Section IR; deterministic codegen writes a real Next.js App Router project. Follow-up chat edits target a single page/section and regenerate only that slice.",
+      "technologies": ["Next.js", "TypeScript", "Python", "FastAPI", "Playwright", "Claude Agent SDK"],
+      "links": {
+        "github": "https://github.com/rohseh303/website-cloning-agent"
+      },
+      "status": "completed",
+      "type": "full-stack"
+    },
+    {
+      "id": "campus-cuisine",
+      "title": "Campus Cuisine",
+      "description": "iOS app displaying dining hall menus across university campuses. Created with Swift/SwiftUI and AWS infrastructure for automatic menu updates.",
+      "technologies": ["SwiftUI", "Swift", "AWS API Gateway", "AWS Lambda", "S3", "IAM", "EventBridge"],
+      "links": {
+        "appStore": "https://apps.apple.com/ca/app/campus-cuisine/id6445905781",
+        "github": "https://github.com/rohseh303"
+      },
+      "metrics": [
+        { "label": "Users", "value": "380+" }
+      ],
+      "status": "completed",
+      "type": "ios",
+      "image": "/images/projects/CampusCuisine.jpg"
+    },
+    {
+      "id": "paytote",
+      "title": "Paytote",
+      "description": "Swift-based iOS app for automated receipt tracking, using Square Payment API and AWS. Built website for stores to download extension with NextJS and Tailwind.",
+      "technologies": ["Swift", "SwiftUI", "Next.js", "Tailwind", "AWS Amplify", "DynamoDB", "API Gateway", "Lambda", "Square API"],
+      "links": {
+        "github": "https://github.com/rohseh303/PayTote-2"
+      },
+      "status": "completed",
+      "type": "full-stack",
+      "image": "/images/projects/Paytote.jpg"
+    }
+  ]
+}
