@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { BlogPost } from '@/types';
 
 export default function WritingPreview() {
-  const recentPosts = (posts as BlogPost[]).slice(0, 3);
+  // Only preview my own hosted writeups (no external `url`), so links stay internal and never 404.
+  const recentPosts = (posts as BlogPost[]).filter((post) => !post.url).slice(0, 3);
   
   return (
     <BorderBox>

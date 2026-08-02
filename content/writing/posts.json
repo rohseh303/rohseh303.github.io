@@ -8,6 +8,13 @@
       "tags": ["rl", "grpo", "prime-rl", "ctf", "build-log"]
     },
     {
+      "slug": "reverse-llm",
+      "title": "Teaching a transformer to write backwards",
+      "date": "2026-07-28",
+      "excerpt": "A decoder-only model that answers forward-English questions in character-reversed English, generated tail-first — why the task is interesting, the design decisions, and the data-pipeline bugs that actually bit.",
+      "tags": ["llm", "from-scratch", "nanochat", "tokenizer", "build-log"]
+    },
+    {
       "slug": "play-long-term-games-with-long-term-people",
       "title": "Play Long-term Games With Long-term People",
       "date": "2019-03-19",
@@ -36,8 +43,8 @@
       "title": "Superintelligence",
       "date": "2014-07-03",
       "excerpt": "Nick Bostrom's seminal work on the paths, dangers, and strategies for artificial general intelligence. Explores the potential for AI to surpass human intelligence and the existential risks involved.",
-      "tags": ["ai", "agi", "philosophy", "future", "stripe-press"],
-      "url": "https://strikepress.com/superintelligence"
+      "tags": ["ai", "agi", "philosophy", "future"],
+      "url": "https://global.oup.com/academic/product/superintelligence-9780199678112"
     },
     {
       "slug": "the-scaling-era",

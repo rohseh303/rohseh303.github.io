@@ -1,12 +1,25 @@
 {
   "projects": [
     {
+      "id": "ctf-lite",
+      "title": "ctf-lite — RL training environment",
+      "description": "Turned a capture-the-flag crypto eval into a GRPO training environment for Qwen3-4B on prime-rl. Kept an honest null result (no significant lift at n=16 rollouts), diagnosed it to a difficulty cliff that starved GRPO of gradient, then built a procedural difficulty generator that splits each task across decoupled sub-knobs to turn a cliff into a climbable curriculum. Published as a repo, a wandb report, HF weights, and a Prime Hub environment.",
+      "technologies": ["prime-rl", "verifiers", "GRPO", "LoRA", "PyTorch", "Qwen3-4B"],
+      "links": {
+        "github": "https://github.com/rohseh303/prime-rl-environments",
+        "writeup": "/writing/ctf-lite-training-environment"
+      },
+      "status": "active",
+      "type": "ml"
+    },
+    {
       "id": "reverse-llm",
       "title": "Reverse-LLM",
       "description": "A language model that reads forward-English questions and answers in character-reversed English, generated tail-first. Custom BPE trained on a mixed forward + reversed corpus, direction tokens for mode control; standard decoder-only transformer, forked from nanochat.",
       "technologies": ["PyTorch", "nanochat", "Custom BPE"],
       "links": {
-        "github": "https://github.com/rohseh303/reverse-llm"
+        "github": "https://github.com/rohseh303/reverse-llm",
+        "writeup": "/writing/reverse-llm"
       },
       "status": "active",
       "type": "ml"

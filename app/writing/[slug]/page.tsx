@@ -4,12 +4,24 @@ import Container from '@/components/ui/Container';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import CtfLiteWriteup from '@/components/writing/CtfLiteWriteup';
+import ReverseLlmWriteup from '@/components/writing/ReverseLlmWriteup';
 
-// Generate static params for all blog posts
+// slug → hosted writeup component. Add a line here to host a new writeup.
+const WRITEUPS: Record<string, React.ComponentType> = {
+  'ctf-lite-training-environment': CtfLiteWriteup,
+  'reverse-llm': ReverseLlmWriteup,
+};
+
+// Any slug not produced by generateStaticParams 404s instead of rendering an empty shell.
+export const dynamicParams = false;
+
+// Only hosted writeups (no external `url`) get an internal page; external reading links route out.
 export function generateStaticParams() {
-  return (posts as any[]).map((post) => ({
-    slug: post.slug,
-  }));
+  return (posts as any[])
+    .filter((post) => !post.url)
+    .map((post) => ({
+      slug: post.slug,
+    }));
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -42,11 +54,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 })}
               </p>
               <div className="max-w-none">
-                {post.slug === 'ctf-lite-training-environment' ? (
-                  <CtfLiteWriteup />
-                ) : (
-                  <p className="text-[#a0a0a0] leading-relaxed">{post.excerpt}</p>
-                )}
+                {(() => {
+                  const Body = WRITEUPS[post.slug];
+                  return Body ? (
+                    <Body />
+                  ) : (
+                    <p className="text-[#a0a0a0] leading-relaxed">{post.excerpt}</p>
+                  );
+                })()}
               </div>
             </article>
           </div>

@@ -39,6 +39,14 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       
       {project.links && (
         <div className="flex gap-4 text-xs">
+          {project.links.writeup && (
+            <Link
+              href={project.links.writeup}
+              className="text-white hover:text-[#a0a0a0] transition-colors"
+            >
+              Writeup →
+            </Link>
+          )}
           {project.links.github && (
             <Link 
               href={project.links.github} 

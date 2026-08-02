@@ -23,6 +23,7 @@ export interface Project {
     github?: string;
     demo?: string;
     appStore?: string;
+    writeup?: string;
   };
   metrics?: {
     label: string;
