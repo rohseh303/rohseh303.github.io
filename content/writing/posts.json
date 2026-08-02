@@ -87,12 +87,12 @@
       "url": "https://www.mechanize.work/blog/life-after-work/"
     },
     {
-      "slug": "arxiv-2501-00656",
-      "title": "ArXiv Paper 2501.00656",
+      "slug": "olmo-2-furious",
+      "title": "2 OLMo 2 Furious",
       "date": "2025-01-06",
-      "excerpt": "Research paper from arXiv. Check the full paper for details.",
-      "tags": ["research", "arxiv", "academic"],
-      "url": "https://arxiv.org/pdf/2501.00656"
+      "excerpt": "AllenAI's fully-open OLMo 2 language models: architecture and training-stability fixes, a late-pretraining data curriculum, and Tülu-3-style post-training — competitive with open-weight peers at similar compute.",
+      "tags": ["olmo", "open-source", "llm", "pretraining", "allenai"],
+      "url": "https://arxiv.org/abs/2501.00656"
     },
     {
       "slug": "speculative-decoding",
