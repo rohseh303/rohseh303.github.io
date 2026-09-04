@@ -14,7 +14,6 @@ export default function ProfileSection() {
         </div>
         <div>
           <h3 className="text-xl font-medium mb-1">{profile.name}</h3>
-          <p className="text-sm text-[#a0a0a0] mb-4">Age: {profile.age}</p>
         </div>
       </div>
       

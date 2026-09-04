@@ -1,16 +1,12 @@
 {
   "profile": {
     "name": "Rohan Sehgal",
-    "age": 22,
     "location": "San Francisco, CA",
-    "currentRole": "Engineer at Tools for Humanity",
-    "backing": "Backed by Y Combinator and Khosla Ventures",
-    "email": "***REMOVED_PRIVATE_CONTACT***",
-    "phone": "***REMOVED_PRIVATE_CONTACT***",
-    "website": "rohseh303.github.io",
+    "currentRole": "Software Engineer at Tools for Humanity",
+    "website": "rohansehgal.me",
     "linkedin": "linkedin.com/in/rohansehgal2/",
     "github": "github.com/rohseh303",
-    "twitter": "twitter.com/rohansehgal_2"
+    "twitter": "x.com/rosehgal"
   },
   "education": {
     "ucsd": {
@@ -32,15 +28,14 @@
   },
   "philosophy": [
     "These are the guiding principles that I live by:",
-    "1. Make a difference while doing cools things",
+    "1. Make a difference while doing cool things",
     "2. Take on risk and embrace the pressure",
     "3. The people make the place and the place makes the people"
   ],
   "values": [
-    "Currently building at Tools for Humanity.",
-    "Previously founding engineer at Broccoli, #3 employee. Today, we're a team of 50 people and have raised a $25M Series A led by Khosla Ventures.",
-    "Built systems that now process millions of calls and serve 400+ enterprise customers. In the last year, we've gone from 0 - 10M+ with a team of 4 engineers and grown 25% MoM",
-    "We are incredibly lean and scrappy. If this excites you and you would like to be a part of the early team, we're hiring! Check us out at https://www.broccoli.com/careers"
+    "Software engineer working on identity systems at Tools for Humanity.",
+    "Previously employee #3 and a founding engineer at Broccoli, where I helped scale the company from $0 to $10M+ ARR.",
+    "Built systems powering millions of AI voice calls for home-service businesses. Broccoli is backed by Y Combinator and Khosla Ventures."
   ],
   "currentlyReading": ""
 }

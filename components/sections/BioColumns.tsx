@@ -3,7 +3,7 @@ export default function BioColumns() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
       <div>
         <p className="text-sm text-[#a0a0a0] leading-relaxed">
-          I'm currently working as a Founding Engineer at Broccoli.com (YC W22), where I'm building AI voice agents and full-stack systems. I focus on creating scalable solutions that deliver real impact.
+          I'm a software engineer working on identity systems at Tools for Humanity. Previously, I was employee #3 and a founding engineer at Broccoli, where I helped scale the company from $0 to $10M+ ARR.
         </p>
       </div>
       <div>

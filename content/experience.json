@@ -1,15 +1,30 @@
 {
   "experience": [
     {
+      "id": "tools-for-humanity",
+      "company": "Tools for Humanity",
+      "role": "Software Engineer",
+      "location": "San Francisco, CA",
+      "startDate": "June 2026",
+      "endDate": "Present",
+      "type": "full-time",
+      "description": [
+        "Building identity systems on the World ID team."
+      ],
+      "technologies": ["TypeScript", "Python", "AWS"]
+    },
+    {
       "id": "broccoli",
       "company": "Broccoli.com (YC W22)",
       "role": "Founding Engineer",
       "location": "San Francisco, CA",
       "startDate": "January 2025",
-      "endDate": "Present",
+      "endDate": "May 2026",
       "type": "full-time",
       "description": [
-        "America runs on the trades. Come join us to find out what we've been working on!"
+        "Employee #3. Helped scale the company from $0 to $10M+ ARR.",
+        "Built systems powering millions of AI voice calls for home-service businesses.",
+        "Backed by Y Combinator and Khosla Ventures."
       ],
       "technologies": ["TypeScript", "Supabase", "Next.js", "Temporal", "LangChain", "Nest.js"]
     },
