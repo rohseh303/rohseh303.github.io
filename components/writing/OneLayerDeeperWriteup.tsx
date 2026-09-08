@@ -24,9 +24,10 @@ export default function OneLayerDeeperWriteup() {
         Easy E1 <span className="text-white">100%</span>. Medium M1–M10{' '}
         <span className="text-white">100% on all ten</span>, every dataset certified{' '}
         <span className="text-white">Max T=64 and OOD-N T=64</span> — from models in the thousands of
-        parameters. Hard <span className="text-white">unsolved</span> (0.03%), in company with all but
-        one team: three showed certified depth on the board, two were disqualified, leaving a single
-        legitimate solve in the field.
+        parameters. Hard <span className="text-white">unsolved</span> (0.03%) — as it went for nearly
+        everyone. Three entries show certified depth on the public board; organiser comments in Discord
+        indicated two of them still had rule violations under review, so the number of fully clean solves
+        may be smaller. The board itself has not changed.
       </Callout>
 
       {/* THE TASK */}
@@ -53,7 +54,7 @@ export default function OneLayerDeeperWriteup() {
       <Divider title="Learn the step, reuse it forever" />
       <p className="text-[#a0a0a0] mb-4">
         If a model learns one <span className="italic">exact</span> transition and applies it recurrently,
-        depth is free: running to T=64 is the same weights, more loops. The winning architecture is a{' '}
+        depth is free: running to T=64 is the same weights, more loops. The architecture that worked is a{' '}
         <span className="text-white">population of tiny arithmetic programs</span>. Each expert is a few
         gates over just <span className="text-white">{'{1, x, N}'}</span>; every gate learns which two
         inputs to read, add vs. multiply, an integer scale, and a bias. A learned selector concentrates on
@@ -120,7 +121,14 @@ for step in range(T):
         all. The method that swept ten Medium datasets was, for Hard, the wrong hypothesis class.
       </p>
 
-      <div className="mt-10 pt-6 border-t border-terminal text-xs text-[#a0a0a0]">
+      <div className="mt-8 pt-5 border-t border-terminal text-[13px] text-[#a0a0a0]">
+        <span className="text-white">Follow-up:</span> after the competition closed I used this task to test whether
+        the right architecture could have been identified <span className="italic">before</span> training —{' '}
+        <a href="/writing/one-layer-priors" className="text-white hover:underline">Can you pick the right
+        architecture before training it?</a>
+      </div>
+
+      <div className="mt-6 pt-5 border-t border-terminal text-xs text-[#a0a0a0]">
         A clean negative that points somewhere specific: a winning Hard model needs{' '}
         <span className="text-white">chained</span> gates that can express (ax+b)²-style and higher-degree
         forms, or a general recurrent arithmetic circuit that infers the step without assuming its algebraic

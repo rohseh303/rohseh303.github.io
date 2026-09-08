@@ -1,6 +1,19 @@
 {
   "posts": [
     {
+      "slug": "one-layer-priors",
+      "title": "Can you pick the right architecture before training it?",
+      "date": "2026-09-08",
+      "excerpt": "Applying Amid et al.'s Neural Network Prior Kernel as an architecture screen. It does not rank networks by trainability \u2014 but it detects whether a design can express the task's rule, and re-ranks correctly when the rule changes. Seven experiments, twenty-four limitations, three of which corrected me.",
+      "tags": [
+        "research",
+        "nnpk",
+        "architecture-search",
+        "modular-arithmetic",
+        "mech-interp"
+      ]
+    },
+    {
       "slug": "one-layer-deeper",
       "title": "One Layer Deeper: learning a hidden recurrence, exactly",
       "date": "2026-08-31",

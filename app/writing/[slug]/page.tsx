@@ -6,12 +6,14 @@ import Link from 'next/link';
 import CtfLiteWriteup from '@/components/writing/CtfLiteWriteup';
 import ReverseLlmWriteup from '@/components/writing/ReverseLlmWriteup';
 import OneLayerDeeperWriteup from '@/components/writing/OneLayerDeeperWriteup';
+import OneLayerPriorsWriteup from '@/components/writing/OneLayerPriorsWriteup';
 
 // slug → hosted writeup component. Add a line here to host a new writeup.
 const WRITEUPS: Record<string, React.ComponentType> = {
   'ctf-lite-training-environment': CtfLiteWriteup,
   'reverse-llm': ReverseLlmWriteup,
   'one-layer-deeper': OneLayerDeeperWriteup,
+  'one-layer-priors': OneLayerPriorsWriteup,
 };
 
 // Any slug not produced by generateStaticParams 404s instead of rendering an empty shell.
