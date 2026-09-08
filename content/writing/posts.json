@@ -1,25 +1,55 @@
 {
   "posts": [
     {
+      "slug": "one-layer-deeper",
+      "title": "One Layer Deeper: learning a hidden recurrence, exactly",
+      "date": "2026-08-31",
+      "excerpt": "A competition about depth. A tiny learned gate-population recurrence swept Easy and all ten Medium datasets (100%, certified to T=64 on seen and unseen moduli). Hard didn't fall \u2014 and the diagnosis, a float64 precision cliff then a hypothesis-class mismatch, was the real prize.",
+      "tags": [
+        "ml",
+        "recurrence",
+        "modular-arithmetic",
+        "competition",
+        "build-log"
+      ]
+    },
+    {
       "slug": "ctf-lite-training-environment",
       "title": "Making ctf-lite a real training environment",
       "date": "2026-07-20",
-      "excerpt": "Turning a capture-the-flag eval into an RL training environment — the null result I kept, the diagnosis, and the difficulty-generator fix I built and measured.",
-      "tags": ["rl", "grpo", "prime-rl", "ctf", "build-log"]
+      "excerpt": "Turning a capture-the-flag eval into an RL training environment \u2014 the null result I kept, the diagnosis, and the difficulty-generator fix I built and measured.",
+      "tags": [
+        "rl",
+        "grpo",
+        "prime-rl",
+        "ctf",
+        "build-log"
+      ]
     },
     {
       "slug": "reverse-llm",
       "title": "Teaching a transformer to write backwards",
       "date": "2026-07-28",
-      "excerpt": "A decoder-only model that answers forward-English questions in character-reversed English, generated tail-first — why the task is interesting, the design decisions, and the data-pipeline bugs that actually bit.",
-      "tags": ["llm", "from-scratch", "nanochat", "tokenizer", "build-log"]
+      "excerpt": "A decoder-only model that answers forward-English questions in character-reversed English, generated tail-first \u2014 why the task is interesting, the design decisions, and the data-pipeline bugs that actually bit.",
+      "tags": [
+        "llm",
+        "from-scratch",
+        "nanochat",
+        "tokenizer",
+        "build-log"
+      ]
     },
     {
       "slug": "play-long-term-games-with-long-term-people",
       "title": "Play Long-term Games With Long-term People",
       "date": "2019-03-19",
       "excerpt": "Naval Ravikant on choosing enduring industries and people you can build with repeatedly, where trust and compound interest have time to do their work.",
-      "tags": ["naval", "career", "compound-interest", "relationships"],
+      "tags": [
+        "naval",
+        "career",
+        "compound-interest",
+        "relationships"
+      ],
       "url": "https://nav.al/long-term"
     },
     {
@@ -27,7 +57,12 @@
       "title": "Fault-tolerant quantum computing is within reach",
       "date": "2026-03-30",
       "excerpt": "Oratomic's case for utility-scale neutral atom quantum computers, high-rate error correction, and the cryptographic implications of practical fault tolerance.",
-      "tags": ["quantum-computing", "fault-tolerance", "cryptography", "neutral-atoms"],
+      "tags": [
+        "quantum-computing",
+        "fault-tolerance",
+        "cryptography",
+        "neutral-atoms"
+      ],
       "url": "https://www.oratomic.com/news/fault-tolerant-within-reach"
     },
     {
@@ -35,7 +70,12 @@
       "title": "The Precipice",
       "date": "2020-03-10",
       "excerpt": "Toby Ord's comprehensive analysis of existential risks facing humanity and how we can navigate the challenges of the 21st century. A philosophical and practical guide to safeguarding humanity's future.",
-      "tags": ["philosophy", "existential-risk", "future", "humanity"],
+      "tags": [
+        "philosophy",
+        "existential-risk",
+        "future",
+        "humanity"
+      ],
       "url": "https://theprecipice.com/"
     },
     {
@@ -43,7 +83,12 @@
       "title": "Superintelligence",
       "date": "2014-07-03",
       "excerpt": "Nick Bostrom's seminal work on the paths, dangers, and strategies for artificial general intelligence. Explores the potential for AI to surpass human intelligence and the existential risks involved.",
-      "tags": ["ai", "agi", "philosophy", "future"],
+      "tags": [
+        "ai",
+        "agi",
+        "philosophy",
+        "future"
+      ],
       "url": "https://global.oup.com/academic/product/superintelligence-9780199678112"
     },
     {
@@ -51,7 +96,12 @@
       "title": "The Scaling Era",
       "date": "2023-01-01",
       "excerpt": "Dwarkesh Patel's in-depth interviews with leading AI researchers including Anthropic CEO Dario Amodei, DeepMind cofounder Demis Hassabis, and OpenAI cofounder Ilya Sutskever. A comprehensive portrait of large language models and a vision of what comes next.",
-      "tags": ["ai", "llm", "interviews", "stripe-press"],
+      "tags": [
+        "ai",
+        "llm",
+        "interviews",
+        "stripe-press"
+      ],
       "url": "https://www.stripe.press/scaling"
     },
     {
@@ -59,7 +109,13 @@
       "title": "Situational Awareness: The Decade Ahead",
       "date": "2024-06-01",
       "excerpt": "Leopold Aschenbrenner's comprehensive analysis of the path from GPT-4 to AGI to superintelligence. A deep dive into compute scaling, intelligence explosions, and the geopolitical implications of the AI race.",
-      "tags": ["ai", "agi", "superintelligence", "geopolitics", "future"],
+      "tags": [
+        "ai",
+        "agi",
+        "superintelligence",
+        "geopolitics",
+        "future"
+      ],
       "url": "https://situational-awareness.ai/"
     },
     {
@@ -67,7 +123,12 @@
       "title": "The upcoming GPT-3 moment for RL",
       "date": "2025-06-20",
       "excerpt": "RL will soon have its own GPT-3 moment. Rather than fine-tuning models on a small number of environments, we expect the field will shift toward massive-scale training across thousands of diverse environments.",
-      "tags": ["mechanize", "ai", "reinforcement-learning", "research"],
+      "tags": [
+        "mechanize",
+        "ai",
+        "reinforcement-learning",
+        "research"
+      ],
       "url": "https://www.mechanize.work/blog/the-upcoming-gpt-3-moment-for-rl/"
     },
     {
@@ -75,7 +136,12 @@
       "title": "The future of AI is already written",
       "date": "2025-10-06",
       "excerpt": "To a first approximation, the future course of civilization has already been fixed, predetermined by hard physical constraints combined with unavoidable economic incentives. Full automation is inevitable.",
-      "tags": ["mechanize", "ai", "philosophy", "automation"],
+      "tags": [
+        "mechanize",
+        "ai",
+        "philosophy",
+        "automation"
+      ],
       "url": "https://www.mechanize.work/blog/technological-determinism/"
     },
     {
@@ -83,15 +149,26 @@
       "title": "Life after work",
       "date": "2025-01-05",
       "excerpt": "Exploring what comes after full automation of human labor.",
-      "tags": ["mechanize", "philosophy", "automation", "future"],
+      "tags": [
+        "mechanize",
+        "philosophy",
+        "automation",
+        "future"
+      ],
       "url": "https://www.mechanize.work/blog/life-after-work/"
     },
     {
       "slug": "olmo-2-furious",
       "title": "2 OLMo 2 Furious",
       "date": "2025-01-06",
-      "excerpt": "AllenAI's fully-open OLMo 2 language models: architecture and training-stability fixes, a late-pretraining data curriculum, and Tülu-3-style post-training — competitive with open-weight peers at similar compute.",
-      "tags": ["olmo", "open-source", "llm", "pretraining", "allenai"],
+      "excerpt": "AllenAI's fully-open OLMo 2 language models: architecture and training-stability fixes, a late-pretraining data curriculum, and T\u00fclu-3-style post-training \u2014 competitive with open-weight peers at similar compute.",
+      "tags": [
+        "olmo",
+        "open-source",
+        "llm",
+        "pretraining",
+        "allenai"
+      ],
       "url": "https://arxiv.org/abs/2501.00656"
     },
     {
@@ -99,7 +176,13 @@
       "title": "Speculative Decoding",
       "date": "2024-01-05",
       "excerpt": "A clever technique to speed up LLM inference by producing multiple tokens per forward pass. Explains the algorithm, its derivation, and newer variants.",
-      "tags": ["ai", "llm", "inference", "optimization", "systems"],
+      "tags": [
+        "ai",
+        "llm",
+        "inference",
+        "optimization",
+        "systems"
+      ],
       "url": "https://philkrav.com/posts/speculative/"
     },
     {
@@ -107,7 +190,11 @@
       "title": "The Mythical Man-Month",
       "date": "2024-12-15",
       "excerpt": "Fred Brooks' classic essay on software engineering management. Why adding manpower to a late software project makes it later.",
-      "tags": ["software-engineering", "management", "classics"],
+      "tags": [
+        "software-engineering",
+        "management",
+        "classics"
+      ],
       "url": "https://en.wikipedia.org/wiki/The_Mythical_Man-Month"
     },
     {
@@ -115,7 +202,11 @@
       "title": "How Complex Systems Fail",
       "date": "2024-12-10",
       "excerpt": "Richard Cook's insightful paper on the nature of complex system failures and why they're inevitable.",
-      "tags": ["systems", "reliability", "engineering"],
+      "tags": [
+        "systems",
+        "reliability",
+        "engineering"
+      ],
       "url": "https://how.complexsystems.fail/"
     },
     {
@@ -123,7 +214,11 @@
       "title": "You Are Not Google",
       "date": "2024-12-05",
       "excerpt": "A reminder that most engineering teams don't need Google-scale solutions. Build what you actually need.",
-      "tags": ["engineering", "architecture", "pragmatism"],
+      "tags": [
+        "engineering",
+        "architecture",
+        "pragmatism"
+      ],
       "url": "https://blog.bradfieldcs.com/you-are-not-google-84912cf44afb"
     },
     {
@@ -131,7 +226,11 @@
       "title": "The Architecture of Open Source Applications",
       "date": "2024-11-15",
       "excerpt": "Deep dives into the architecture of successful open source projects. Learn from the best.",
-      "tags": ["architecture", "open-source", "learning"],
+      "tags": [
+        "architecture",
+        "open-source",
+        "learning"
+      ],
       "url": "https://aosabook.org/en/"
     }
   ]
