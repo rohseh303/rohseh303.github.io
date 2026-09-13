@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Callout, Th, Td, EvidenceBar } from './prose';
+import { Divider, Callout, Th, Td } from './prose';
 
 export default function ReverseLlmWriteup() {
   return (
@@ -14,11 +14,6 @@ export default function ReverseLlmWriteup() {
         A full pretraining + SFT stack built to answer one question: can a transformer learn to generate coherent
         language <span className="italic">tail-first</span>?
       </p>
-
-      {/* evidence bar */}
-      <EvidenceBar items={[
-        ['code', 'GitHub repo', 'https://github.com/rohseh303/reverse-llm'],
-      ]} />
 
       <Callout>
         <span className="uppercase tracking-wider text-[10px] text-white block mb-1">Status</span>

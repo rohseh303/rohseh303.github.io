@@ -16,7 +16,6 @@ export default function OneLayerPriorsWriteup() {
       </p>
 
       <EvidenceBar items={[
-        ['code', 'GitHub repo', 'https://github.com/rohseh303/one-layer-priors'],
         ['paper', 'Amid et al., arXiv:2202.06438', 'https://arxiv.org/abs/2202.06438'],
         ['task', 'One Layer Deeper', 'https://onelayerdeeper.ai'],
       ]} />

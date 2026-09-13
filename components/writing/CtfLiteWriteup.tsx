@@ -24,7 +24,6 @@ export default function CtfLiteWriteup() {
 
       {/* evidence bar */}
       <EvidenceBar items={[
-        ['code', 'GitHub repo', 'https://github.com/rohseh303/prime-rl-environments'],
         ['runs', 'wandb report', 'https://wandb.ai/rohansehgal935-personal/ctf-lite-rl/reports/ctf-lite-GRPO-curriculum-training-runs--VmlldzoxNzUzNDcxMw'],
         ['weights', 'HuggingFace', 'https://huggingface.co/RSRS64/qwen3-4b-ctf-lite-grpo'],
         ['env', 'Prime Hub', 'https://app.primeintellect.ai/dashboard/environments/rohseh303/ctf-lite'],

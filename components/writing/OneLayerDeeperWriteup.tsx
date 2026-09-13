@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Callout, Th, Td, EvidenceBar } from './prose';
+import { Divider, Callout, Th, Td } from './prose';
 
 export default function OneLayerDeeperWriteup() {
   return (
@@ -14,10 +14,6 @@ export default function OneLayerDeeperWriteup() {
         <span className="text-white">One Layer Deeper</span> · Tilde Research × Core Automation ·
         learn the one-step rule, reuse it recurrently, certify exact accuracy out to depth 64.
       </p>
-
-      <EvidenceBar items={[
-        ['code', 'GitHub repo', 'https://github.com/rohseh303/one-layer-deeper'],
-      ]} />
 
       <Callout>
         <span className="uppercase tracking-wider text-[10px] text-white block mb-1">Result</span>

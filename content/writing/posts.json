@@ -5,6 +5,7 @@
       "title": "Can you pick the right architecture before training it?",
       "date": "2026-09-08",
       "excerpt": "Applying Amid et al.'s Neural Network Prior Kernel as an architecture screen. It does not rank networks by trainability \u2014 but it detects whether a design can express the task's rule, and re-ranks correctly when the rule changes. Seven experiments, twenty-four limitations, three of which corrected me.",
+      "github": "https://github.com/rohseh303/one-layer-priors",
       "tags": [
         "research",
         "nnpk",
@@ -18,6 +19,7 @@
       "title": "One Layer Deeper: learning a hidden recurrence, exactly",
       "date": "2026-08-31",
       "excerpt": "A competition about depth. A tiny learned gate-population recurrence swept Easy and all ten Medium datasets (100%, certified to T=64 on seen and unseen moduli). Hard didn't fall \u2014 and the diagnosis, a float64 precision cliff then a hypothesis-class mismatch, was the real prize.",
+      "github": "https://github.com/rohseh303/one-layer-deeper",
       "tags": [
         "ml",
         "recurrence",
@@ -31,6 +33,7 @@
       "title": "Making ctf-lite a real training environment",
       "date": "2026-07-20",
       "excerpt": "Turning a capture-the-flag eval into an RL training environment \u2014 the null result I kept, the diagnosis, and the difficulty-generator fix I built and measured.",
+      "github": "https://github.com/rohseh303/prime-rl-environments",
       "tags": [
         "rl",
         "grpo",
@@ -44,6 +47,7 @@
       "title": "Teaching a transformer to write backwards",
       "date": "2026-07-28",
       "excerpt": "A decoder-only model that answers forward-English questions in character-reversed English, generated tail-first \u2014 why the task is interesting, the design decisions, and the data-pipeline bugs that actually bit.",
+      "github": "https://github.com/rohseh303/reverse-llm",
       "tags": [
         "llm",
         "from-scratch",

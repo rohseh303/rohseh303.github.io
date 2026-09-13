@@ -41,4 +41,5 @@ export interface BlogPost {
   excerpt: string;
   tags?: string[];
   url?: string;
+  github?: string;
 }

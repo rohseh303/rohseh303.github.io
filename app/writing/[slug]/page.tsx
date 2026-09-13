@@ -7,6 +7,8 @@ import CtfLiteWriteup from '@/components/writing/CtfLiteWriteup';
 import ReverseLlmWriteup from '@/components/writing/ReverseLlmWriteup';
 import OneLayerDeeperWriteup from '@/components/writing/OneLayerDeeperWriteup';
 import OneLayerPriorsWriteup from '@/components/writing/OneLayerPriorsWriteup';
+import GitHubIcon from '@/components/ui/GitHubIcon';
+import type { BlogPost } from '@/types';
 
 // slug → hosted writeup component. Add a line here to host a new writeup.
 const WRITEUPS: Record<string, React.ComponentType> = {
@@ -30,7 +32,7 @@ export function generateStaticParams() {
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = (posts as any[]).find(p => p.slug === slug);
+  const post = (posts as BlogPost[]).find(p => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -49,7 +51,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               ← Back to writing
             </Link>
             <article className="border-terminal p-8">
-              <h1 className="text-3xl font-medium mb-4">{post.title}</h1>
+              <div className="flex items-start justify-between gap-5 mb-4">
+                <h1 className="text-3xl font-medium">{post.title}</h1>
+                {post.github && (
+                  <a
+                    href={post.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${post.title} GitHub repository`}
+                    title="Open GitHub repository"
+                    className="shrink-0 text-[#777] hover:text-white transition-colors p-1"
+                  >
+                    <GitHubIcon className="w-6 h-6" />
+                  </a>
+                )}
+              </div>
               <p className="text-sm text-[#a0a0a0] mb-8">
                 {new Date(post.date).toLocaleDateString('en-US', {
                   month: 'long',

@@ -1,45 +1,27 @@
-import { posts } from '@/content/writing/posts.json';
-import aboutData from '@/content/about.json';
 import Navigation from '@/components/layout/Navigation';
-import Container from '@/components/ui/Container';
 import SectionHeader from '@/components/sections/SectionHeader';
 import BlogPostCard from '@/components/cards/BlogPostCard';
-import BorderBox from '@/components/ui/BorderBox';
-import { BlogPost } from '@/types';
+import { posts } from '@/content/writing/posts.json';
+import type { BlogPost } from '@/types';
+
+const writing = (posts as BlogPost[])
+  .filter((post) => !post.url)
+  .sort((a, b) => b.date.localeCompare(a.date));
 
 export default function WritingPage() {
-  const { currentlyReading } = aboutData;
-  const allPosts = posts as BlogPost[];
-  // Posts without a `url` are my own hosted writeups; posts with a `url` link out to external reading.
-  const writing = allPosts.filter((post) => !post.url);
-  const reading = allPosts.filter((post) => post.url);
-
   return (
     <>
       <Navigation />
       <main className="min-h-screen pt-32 pb-16">
-        <Container>
-          {/* WRITING — my own writeups */}
+        <div className="max-w-5xl mx-auto px-6 md:px-8">
           <SectionHeader title="WRITING" />
-          <div className="max-w-3xl mb-16">
-            {writing.length > 0 ? (
-              writing.map((post) => <BlogPostCard key={post.slug} post={post} />)
-            ) : (
-              <p className="text-sm text-[#a0a0a0]">No posts yet.</p>
-            )}
+          <p className="text-sm text-[#a0a0a0] max-w-2xl mb-8">
+            Technical experiments, build logs, and the parts of the work that changed my mind.
+          </p>
+          <div className="max-w-3xl">
+            {writing.map((post) => <BlogPostCard key={post.slug} post={post} />)}
           </div>
-
-          {/* READING — external articles & books */}
-          <SectionHeader title="READING" />
-          {currentlyReading && currentlyReading.trim() !== "" && currentlyReading !== "Check back later for updates" && (
-            <BorderBox>
-              <p className="text-sm text-[#a0a0a0]">{currentlyReading}</p>
-            </BorderBox>
-          )}
-          <div className="max-w-3xl mt-6">
-            {reading.map((post) => <BlogPostCard key={post.slug} post={post} />)}
-          </div>
-        </Container>
+        </div>
       </main>
     </>
   );
