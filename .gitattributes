@@ -1,0 +1,2 @@
+# Preserve downloadable experiment evidence and upstream formatting.
+public/artifacts/rust-eagle3/** -text -whitespace

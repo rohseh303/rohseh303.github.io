@@ -9,11 +9,11 @@ const navItems = [
   { href: '/resume', label: 'resume' },
 ];
 
-export default function Navigation() {
+export default function Navigation({ stackOnMobile = false }: { stackOnMobile?: boolean }) {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 border-b border-[rgba(255,255,255,0.08)] bg-[rgba(10,10,10,0.85)] backdrop-blur-xl">
+    <nav className={`fixed top-0 left-0 right-0 z-40 border-b border-[rgba(255,255,255,0.08)] bg-[rgba(10,10,10,0.85)] backdrop-blur-xl ${stackOnMobile ? 'pt-14 sm:pt-0' : ''}`}>
       <div className="max-w-5xl mx-auto flex items-center justify-end px-6 md:px-8 py-5">
         <ul className="flex items-center gap-5 md:gap-8">
           {navItems.map((item) => {

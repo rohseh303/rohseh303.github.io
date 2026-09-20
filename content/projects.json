@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "id": "rust-eagle3",
+      "title": "Rust EAGLE-3 — draft adaptation",
+      "description": "Adapted an existing speculative draft for frozen Qwen3-8B. Measured 15.6% lower Rust latency versus the upstream draft on a small held-out workload, with seed replication, matched training controls, and explicit serving regressions. Includes reproducible code, raw evidence, and six checkpoint cards.",
+      "technologies": [
+        "EAGLE-3",
+        "SGLang",
+        "SpecForge",
+        "PyTorch",
+        "Rust"
+      ],
+      "links": {
+        "writeup": "/writing/rust-eagle3",
+        "github": "https://github.com/rohseh303/rust-eagle3"
+      },
+      "status": "completed",
+      "type": "ml"
+    },
+    {
       "id": "ctf-lite",
       "title": "ctf-lite — RL training environment",
       "description": "Turned a capture-the-flag crypto eval into a GRPO training environment for Qwen3-4B on prime-rl. Kept an honest null result (no significant lift at n=16 rollouts), diagnosed it to a difficulty cliff that starved GRPO of gradient, then built a procedural difficulty generator that splits each task across decoupled sub-knobs to turn a cliff into a climbable curriculum. Published as a repo, a wandb report, HF weights, and a Prime Hub environment.",

@@ -7,6 +7,7 @@ import CtfLiteWriteup from '@/components/writing/CtfLiteWriteup';
 import ReverseLlmWriteup from '@/components/writing/ReverseLlmWriteup';
 import OneLayerDeeperWriteup from '@/components/writing/OneLayerDeeperWriteup';
 import OneLayerPriorsWriteup from '@/components/writing/OneLayerPriorsWriteup';
+import RustEagle3Writeup from '@/components/writing/RustEagle3Writeup';
 import GitHubIcon from '@/components/ui/GitHubIcon';
 import type { BlogPost } from '@/types';
 
@@ -16,6 +17,7 @@ const WRITEUPS: Record<string, React.ComponentType> = {
   'reverse-llm': ReverseLlmWriteup,
   'one-layer-deeper': OneLayerDeeperWriteup,
   'one-layer-priors': OneLayerPriorsWriteup,
+  'rust-eagle3': RustEagle3Writeup,
 };
 
 // Any slug not produced by generateStaticParams 404s instead of rendering an empty shell.
@@ -30,6 +32,17 @@ export function generateStaticParams() {
     }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  if (slug !== 'rust-eagle3') return {};
+  const post = posts.find(p => p.slug === slug)!;
+  return {
+    title: `${post.title} | Rohan Sehgal`,
+    description: post.excerpt,
+    openGraph: { title: post.title, description: post.excerpt, type: 'article', url: 'https://www.rohansehgal.me/writing/rust-eagle3' },
+  };
+}
+
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = (posts as BlogPost[]).find(p => p.slug === slug);
@@ -40,7 +53,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   
   return (
     <>
-      <Navigation />
+      <Navigation stackOnMobile={post.slug === 'rust-eagle3'} />
       <main className="min-h-screen pt-32 pb-16">
         <Container>
           <div className="max-w-3xl mx-auto">
@@ -50,7 +63,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             >
               ← Back to writing
             </Link>
-            <article className="border-terminal p-8">
+            <article className={post.slug === 'rust-eagle3' ? "border-terminal p-5 sm:p-8" : "border-terminal p-8"}>
               <div className="flex items-start justify-between gap-5 mb-4">
                 <h1 className="text-3xl font-medium">{post.title}</h1>
                 {post.github && (
@@ -71,6 +84,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   month: 'long',
                   day: 'numeric',
                   year: 'numeric',
+                  timeZone: post.slug === 'rust-eagle3' ? 'UTC' : undefined,
                 })}
               </p>
               <div className="max-w-none">

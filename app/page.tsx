@@ -8,7 +8,7 @@ import { projects } from '@/content/projects.json';
 import type { Experience, Project } from '@/types';
 
 const featuredExperience = (experience as Experience[]).slice(0, 4);
-const featuredProjects = (projects as Project[]).slice(0, 3);
+const featuredProjects = (projects as Project[]).slice(0, 4);
 
 const companyLinks: Record<string, string> = {
   'tools-for-humanity': 'https://www.linkedin.com/company/toolsforhumanity',

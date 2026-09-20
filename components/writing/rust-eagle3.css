@@ -1,0 +1,22 @@
+.rust-study { color: #b3b3b3; font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
+.rust-study p { margin: 0 0 1.15rem; }
+.rust-study strong { color: #ededed; font-weight: 600; }
+.rust-study h2 { color: #ededed; font-size: 1.2rem; line-height: 1.4; font-weight: 500; margin: 3rem 0 1rem; padding-top: 1rem; border-top: 1px solid #292929; scroll-margin-top: 7rem; }
+.rust-study a { color: #dedede; text-decoration: underline; text-underline-offset: 4px; }
+.rust-study a:hover { color: #fff; }
+.rust-study ul { list-style: disc; padding-left: 1.25rem; margin-bottom: 1.25rem; }
+.rust-study li { margin-bottom: .65rem; }
+.rust-study img { display: block; width: 100%; height: auto; border: 1px solid #333; margin: 1.5rem 0 .75rem; background: #fff; }
+.rust-study code { font-size: .82em; background: #181818; padding: .12rem .3rem; border-radius: 3px; }
+.rust-study pre { overflow-x: auto; white-space: pre; background: #181818; padding: 1rem; margin: 1.5rem 0; }
+.rust-table-scroll { overflow-x: auto; margin: 1.5rem 0; border: 1px solid #333; }
+.rust-study table { width: 100%; font-size: 12px; line-height: 1.55; border-collapse: collapse; min-width: 500px; }
+.rust-study th, .rust-study td { padding: .8rem .75rem; text-align: left; border-bottom: 1px solid #292929; }
+.rust-study th { font-weight: 500; color: #f0f0f0; background: #141414; }
+.rust-artifacts { display: flex; flex-wrap: wrap; gap: .6rem 1rem; margin-bottom: 1rem; font-size: 12px; }
+.rust-artifacts a { padding: .45rem .65rem; border: 1px solid #444; text-decoration: none; }
+.rust-release-note { font-size: 12px; color: #888; }
+.rust-toc { font-size: 13px; margin: 1.5rem 0 2rem; padding: .85rem 1rem; border: 1px solid #333; }
+.rust-toc summary { cursor: pointer; color: #ddd; }
+.rust-toc nav { display: grid; grid-template-columns: repeat(auto-fit,minmax(190px,1fr)); gap: .4rem 1rem; padding-top: .8rem; }
+@media (max-width: 640px) { .rust-study { font-size: 14px; } .rust-study h2 { margin-top: 2.5rem; } }

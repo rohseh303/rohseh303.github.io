@@ -1,6 +1,20 @@
 {
   "posts": [
     {
+      "slug": "rust-eagle3",
+      "github": "https://github.com/rohseh303/rust-eagle3",
+      "title": "Making an EAGLE-3 draft faster at Rust",
+      "date": "2026-09-19",
+      "excerpt": "A frozen Qwen3-8B target, six adapted drafts, and a 15.6% Rust latency reduction over the original drafter. Replication, data-versus-training controls, and the serving trade-offs that survived measurement.",
+      "tags": [
+        "inference",
+        "EAGLE-3",
+        "SGLang",
+        "Rust",
+        "experiment"
+      ]
+    },
+    {
       "slug": "one-layer-priors",
       "title": "Can you pick the right architecture before training it?",
       "date": "2026-09-08",
