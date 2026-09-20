@@ -10,7 +10,9 @@ export default function RustEagle3Writeup() {
         <a href="/artifacts/rust-eagle3/phase2/comparisons.csv" download>Results CSV ↓</a>
         <a href="/artifacts/rust-eagle3/WRITEUP.md" download>Full report ↓</a>
         {links.repository && <a href={links.repository}>GitHub ↗</a>}
-        {links.release && <a href={links.release}>Weights ↗</a>}
+        {links.huggingfaceRust && <a href={links.huggingfaceRust}>Rust draft on HF ↗</a>}
+        {links.huggingfaceMixed && <a href={links.huggingfaceMixed}>Mixed draft on HF ↗</a>}
+        {links.release && <a href={links.release}>All checkpoints ↗</a>}
       </div>
       {!links.release && <p className="rust-release-note">Local review: six checkpoint bundles are prepared. Public weight downloads will be linked when the release is published.</p>}
       <details className="rust-toc">
